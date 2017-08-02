@@ -28,3 +28,27 @@ this can be changed. */
 let a;
 a = 3.14;
 console.log(a);
+// returns 3.14
+
+// Declare a value and assign a value
+let a = 3.14;
+console.log(a);
+
+// Declaring a constant variable
+/* 
+constant variable is one which won't ever change during th rest of the program
+the sate of constant can ve enforced by using const instead of let
+*/
+const a = 3.14; // The value of a cannot be modified
+a = 6.28; // Impossible!
+// returns Attempting to override 'a' which is constant
+
+// Increment a number variable
+/*
++= increment operator increases the value with the number desired
+++ incrememnt operator which increases the value 
+*/
+let b = 0; // b contains 0
+b += 1; // b contains 1
+b++;  // b contains 2
+console.log(b); // Shows 2
