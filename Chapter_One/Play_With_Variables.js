@@ -210,6 +210,14 @@ console.log(a, b, c, d, e, f, g);
 Write a program that asks the user for a raw price. 
 After that, it calculates the corresponding final price using a VAT rate of 20.6%.
 */
+var vatRate = 20.6;
+var input = Number(prompt('Please enter the raw price £ '));
+var nb = Number(input); // converts string type to number
+var total = input/100 * vatRate;
+console.log(total);
+
+
+
 
 /* From Celsius to Fahrenheit degrees
 Write a program that asks for a temperature in Celsius degrees, 
