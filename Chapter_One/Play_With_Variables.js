@@ -122,9 +122,112 @@ If a number fails to convert, you'll get the result NaN (Not a Number).
 */
 const g = "five" * 2;
 console.log(g); // Show NaN
+
 /* Sometimes you'll wish to convert the value of another type. 
 This is called explicit conversion. 
 Number() command converts the value between the parenthesis to a number.
 String() command converts the value between the parenthesis to a string.
 */
 
+const h = "5";
+console.log(h + 1); // Concatenation: show the string "51"
+const i = Number("5");
+console.log(i + 1); // Numerical addition: show the number 6
+
+// User interactions
+
+// Entering informaiton  - start to exchange information with user
+
+const name = prompt("Enter your first name:"); // diaglogue box will pop up asking for first name
+alert('Hello, ${name}');
+// click ok and return with a personalised greeting of Hello,{name}
+/* the name variable is stored as a string
+alert() triggers a display containing the result of the concatenation 
+this contains the string "Hello, " + name variable
+*/
+
+// Display information
+/* console.log() and alert() used to display information 
+console.log() does not stop programme execution and can display several comma-seperated values at once
+*/
+const temp1 = 36.9;
+const temp2 = 37.6;
+const temp3 = 37.1;
+console.log(temp1, temp2, temp3); // returns "36.9 37.6 37.1"
+
+// Entering a number 
+/* 
+prompt() always returns a string value
+Number() converts a string into a number
+*/
+const input = prompt("Enter a number:"); // input's type is string
+const nb = Number(input); // nb's type is number
+// both operations can be combined into one line
+const nb = Number(prompt("Enter a number:")); // nb's type is number
+/* user input is directly converted into a number value by Number() 
+this is stored in nb variable
+*/
+
+// Variable naming 
+
+// naming variables makes code easier to read
+// 1. letter form
+const a = 5.5;
+const b = 3.14;
+const c = 2 * a * b;
+console.log(c);
+// 2. words
+const radius = 5.5;
+const pi = 3.14;
+const perimeter = 2 * pi * radius;
+console.log(perimeter);
+// same function, just version two is easier to understand
+
+// CODING TIME!
+/* Improved Hello 
+Write a program that asks the user for his first name and his last name.
+The program then displays them in one sentence.
+*/
+
+/* Final Values
+Observe the following program 
+predict the final values of its variables
+Execute to checkpredicitons
+*/
+let a = 2;
+a -= 1;
+a++;
+let b = 8;
+b += 2;
+const c = a + b * b;
+const d = a * b + b;
+const e = a * (b + b);
+const f = a * b / a;
+const g = b / a * a;
+console.log(a, b, c, d, e, f, g);
+
+/* VAT calculation
+Write a program that asks the user for a raw price. 
+After that, it calculates the corresponding final price using a VAT rate of 20.6%.
+*/
+
+/* From Celsius to Fahrenheit degrees
+Write a program that asks for a temperature in Celsius degrees, 
+then displays it in Fahrenheit degrees.
+*/
+
+
+/* Variable swapping
+Observe the following
+Add necessary code to swap the variables number1 and number2 
+Several valid ways
+use more than two variables to solve it 
+*/
+
+let number1 = 5;
+let number2 = 3;
+
+// TODO: type your code here (and nowhere else!)
+
+console.log(number1); // Should show 3
+console.log(number2); // Should show 5
