@@ -188,6 +188,11 @@ console.log(perimeter);
 Write a program that asks the user for his first name and his last name.
 The program then displays them in one sentence.
 */
+var fName = prompt("What is your firstname?");
+var sName = prompt("What is your surname?");
+
+alert(`Hello, ${fName} ${sName}`);
+
 
 /* Final Values
 Observe the following program 
@@ -217,12 +222,15 @@ var total = input/100 * vatRate;
 console.log(total);
 
 
-
-
 /* From Celsius to Fahrenheit degrees
 Write a program that asks for a temperature in Celsius degrees, 
 then displays it in Fahrenheit degrees.
+The conversion between scales is given by the formula: [°F] = [°C] x 9/5 + 32.
 */
+var input = Number(prompt('enter the temperature in celsius');
+var cTemp = Number(input);                
+var fahrenheit = (cTemp * 9/5) + 32));
+console.log(fahrenheit);
 
 
 /* Variable swapping
